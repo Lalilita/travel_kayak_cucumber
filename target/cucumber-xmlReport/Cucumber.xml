@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="4" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="53.734">
+    <testcase classname="Booking the selected hotel" name="User can book a the selected hotel" time="18.746">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//div[@class='FLpo-hotel-name'])[1]&quot;}&#10;  (Session info: chrome=102.0.5005.61)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'Lalis-MBP.fios-router.home', ip: 'fe80:0:0:0:1040:911:59b:a4ee%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.2', java.version: '11.0.14'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /var/folders/_q/7v4d026x789...}, goog:chromeOptions: {debuggerAddress: localhost:54495}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 2aec0cc371746eee884af61099c1f531&#10;*** Element info: {Using=xpath, value=(//div[@class='FLpo-hotel-name'])[1]}" type="org.openqa.selenium.NoSuchElementException">
+            <![CDATA[Given user on the result page...............................................passed
+When user click on View Deal button of the top hotel........................failed
+Then the page navigate to new window of the detail of hotel in different website.skipped
+When user click on book button..............................................skipped
+And user can fill out customer detail "Mary" "J" "test.mary@mail.com" "2223334444" "United States".skipped
+And user can fill out billing address "<Address1>" "<State>" "<Zipcode>" "United States" "<City>".skipped
+And user can fill out payment information "<CardNumber>" "<ExpMonth>" "<ExpYear>" "<CVV>" "<BankName>".skipped
+Then user can see the confirm your booking button to confirm booking........skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//div[@class='FLpo-hotel-name'])[1]"}
+  (Session info: chrome=102.0.5005.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Lalis-MBP.fios-router.home', ip: 'fe80:0:0:0:1040:911:59b:a4ee%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.2', java.version: '11.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /var/folders/_q/7v4d026x789...}, goog:chromeOptions: {debuggerAddress: localhost:54495}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2aec0cc371746eee884af61099c1f531
+*** Element info: {Using=xpath, value=(//div[@class='FLpo-hotel-name'])[1]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy20.getText(Unknown Source)
+	at kayak.stepDefinitions.BookingSelectedHotelTest.user_click_on_view_deal_button_of_the_top_hotel(BookingSelectedHotelTest.java:22)
+	at ✽.user click on View Deal button of the top hotel(file:///Users/lalibee/Documents/TechTriangle_cucumber_project/src/test/resources/featureFiles/bookingSelectedHotel.feature:6)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Booking the selected hotel" name="User can book a the selected hotel 2" time="5.805">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//div[@class='FLpo-hotel-name'])[1]&quot;}&#10;  (Session info: chrome=102.0.5005.61)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'Lalis-MBP.fios-router.home', ip: 'fe80:0:0:0:1040:911:59b:a4ee%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.2', java.version: '11.0.14'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /var/folders/_q/7v4d026x789...}, goog:chromeOptions: {debuggerAddress: localhost:54495}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 2aec0cc371746eee884af61099c1f531&#10;*** Element info: {Using=xpath, value=(//div[@class='FLpo-hotel-name'])[1]}" type="org.openqa.selenium.NoSuchElementException">
+            <![CDATA[Given user on the result page...............................................passed
+When user click on View Deal button of the top hotel........................failed
+Then the page navigate to new window of the detail of hotel in different website.skipped
+When user click on book button..............................................skipped
+And user can fill out customer detail "<FName>" "<LName>" "<Email>" "<Phone>" "United States".skipped
+And user can fill out billing address "10345 Black St." "Florida" "30111" "United States" "Tampa".skipped
+And user can fill out payment information "<CardNumber>" "<ExpMonth>" "<ExpYear>" "<CVV>" "<BankName>".skipped
+Then user can see the confirm your booking button to confirm booking........skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//div[@class='FLpo-hotel-name'])[1]"}
+  (Session info: chrome=102.0.5005.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Lalis-MBP.fios-router.home', ip: 'fe80:0:0:0:1040:911:59b:a4ee%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.2', java.version: '11.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /var/folders/_q/7v4d026x789...}, goog:chromeOptions: {debuggerAddress: localhost:54495}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2aec0cc371746eee884af61099c1f531
+*** Element info: {Using=xpath, value=(//div[@class='FLpo-hotel-name'])[1]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy20.getText(Unknown Source)
+	at kayak.stepDefinitions.BookingSelectedHotelTest.user_click_on_view_deal_button_of_the_top_hotel(BookingSelectedHotelTest.java:22)
+	at ✽.user click on View Deal button of the top hotel(file:///Users/lalibee/Documents/TechTriangle_cucumber_project/src/test/resources/featureFiles/bookingSelectedHotel.feature:6)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Booking the selected hotel" name="User can book a the selected hotel 3" time="5.809">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//div[@class='FLpo-hotel-name'])[1]&quot;}&#10;  (Session info: chrome=102.0.5005.61)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'Lalis-MBP.fios-router.home', ip: 'fe80:0:0:0:1040:911:59b:a4ee%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.2', java.version: '11.0.14'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /var/folders/_q/7v4d026x789...}, goog:chromeOptions: {debuggerAddress: localhost:54495}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 2aec0cc371746eee884af61099c1f531&#10;*** Element info: {Using=xpath, value=(//div[@class='FLpo-hotel-name'])[1]}" type="org.openqa.selenium.NoSuchElementException">
+            <![CDATA[Given user on the result page...............................................passed
+When user click on View Deal button of the top hotel........................failed
+Then the page navigate to new window of the detail of hotel in different website.skipped
+When user click on book button..............................................skipped
+And user can fill out customer detail "<FName>" "<LName>" "<Email>" "<Phone>" "<Country>".skipped
+And user can fill out billing address "<Address1>" "<State>" "<Zipcode>" "<Country>" "<City>".skipped
+And user can fill out payment information "1234 5678 8765 4321" "01" "2024" "911" "ABCDEFG".skipped
+Then user can see the confirm your booking button to confirm booking........skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//div[@class='FLpo-hotel-name'])[1]"}
+  (Session info: chrome=102.0.5005.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Lalis-MBP.fios-router.home', ip: 'fe80:0:0:0:1040:911:59b:a4ee%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.2', java.version: '11.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /var/folders/_q/7v4d026x789...}, goog:chromeOptions: {debuggerAddress: localhost:54495}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2aec0cc371746eee884af61099c1f531
+*** Element info: {Using=xpath, value=(//div[@class='FLpo-hotel-name'])[1]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy20.getText(Unknown Source)
+	at kayak.stepDefinitions.BookingSelectedHotelTest.user_click_on_view_deal_button_of_the_top_hotel(BookingSelectedHotelTest.java:22)
+	at ✽.user click on View Deal button of the top hotel(file:///Users/lalibee/Documents/TechTriangle_cucumber_project/src/test/resources/featureFiles/bookingSelectedHotel.feature:6)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Searching the cheapest hotel" name="User can book a the cheapest 5star hotel in the selected city and date" time="22.877">
+        <failure message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=102.0.5005.61)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'Lalis-MBP.fios-router.home', ip: 'fe80:0:0:0:1040:911:59b:a4ee%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.2', java.version: '11.0.14'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /var/folders/_q/7v4d026x789...}, goog:chromeOptions: {debuggerAddress: localhost:54495}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 2aec0cc371746eee884af61099c1f531&#10;*** Element info: {Using=xpath, value=(//div[@aria-label='Hotel class']/div/div[5]//div[1]/div)[1]}" type="org.openqa.selenium.NoSuchWindowException">
+            <![CDATA[Given user on the stays page................................................passed
+When user select city "New York, United States".............................passed
+And user select checked-in date "March 26 2023" and checked-out date "April 8 2023".passed
+And user select room "3", adult "8", and children amount "4"................passed
+And user click on 5 stars Hotel and 8plus Review score......................failed
+And user select sorted by Price (low to high) "Price (low to high)".........skipped
+Then user can see the lowest price on the top of result list................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.61)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Lalis-MBP.fios-router.home', ip: 'fe80:0:0:0:1040:911:59b:a4ee%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.2', java.version: '11.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /var/folders/_q/7v4d026x789...}, goog:chromeOptions: {debuggerAddress: localhost:54495}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2aec0cc371746eee884af61099c1f531
+*** Element info: {Using=xpath, value=(//div[@aria-label='Hotel class']/div/div[5]//div[1]/div)[1]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy20.toString(Unknown Source)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:173)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.toString(ExpectedConditions.java:305)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:173)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:268)
+	at kayak.utilities.CommonMethods.waitForVisibility(CommonMethods.java:207)
+	at kayak.stepDefinitions.SearchTheCheapestHotelTest.user_click_on_5_stars_Hotel_and_8plus_Review_score(SearchTheCheapestHotelTest.java:55)
+	at ✽.user click on 5 stars Hotel and 8plus Review score(file:///Users/lalibee/Documents/TechTriangle_cucumber_project/src/test/resources/featureFiles/searchTheCheapestHotel.feature:9)
+]]>
+        </failure>
+    </testcase>
+</testsuite>
